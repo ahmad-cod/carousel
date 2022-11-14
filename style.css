@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+.carousel-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.carousel_slide {
+    display: none;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Fading animation */
+.fade {
+    animation: fade 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
