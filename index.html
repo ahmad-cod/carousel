@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +8,33 @@
     <title>Carousel || Slideshow</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="carousel-container">
-        <a class="prev carousel_btn">&#10094;</a>
-        <div class="carousel_track-container">
-            <ul class="carousel_slides">
-                <li class="carousel_slide fade">
-                    <img src="img/communication.png" alt="Carousel Image">
-                </li>
-                <li class="carousel_slide fade">
-                    <img src="img/what-is-effective-comm.png" alt="Carousel Image">
-                </li>
-                <li class="carousel_slide fade">
-                    <img src="img/7cs-effective-communication.png" alt="Carousel Image">
-                </li>
-                <li class="carousel_slide fade">
-                    <img src="img/phTips-for-Effective-Comm.png" alt="Carousel Image">
-                </li>
-                <li class="carousel_slide fade">
-                    <img src="img/Books-on-Communication-Skills.png" alt="Carousel Image">
-                </li>
-                <li class="carousel_slide fade">
-                    <img src="img/speedreadingcontent2.png" alt="Carousel Image">
-                </li>
-            </ul>
-        </div>
-        <a class="next carousel_btn">&#10095;</a>
+        <a class="prev carousel_btn" onclick="plusSlides(-1)">&#10094;</a>
+        <ul class="carousel_slides">
+            <li class="carousel_slide fade">
+                <img src="img/communication.png" alt="Carousel Image">
+            </li>
+            <li class="carousel_slide fade">
+                <img src="img/what-is-effective-comm.png" alt="Carousel Image">
+            </li>
+            <li class="carousel_slide fade">
+                <img src="img/7cs-effective-communication.png" alt="Carousel Image">
+            </li>
+            <li class="carousel_slide fade">
+                <img src="img/phTips-for-Effective-Comm.png" alt="Carousel Image">
+            </li>
+            <li class="carousel_slide fade">
+                <img src="img/Books-on-Communication-Skills.png" alt="Carousel Image">
+            </li>
+            <li class="carousel_slide fade">
+                <img src="img/speedreadingcontent2.png" alt="Carousel Image">
+            </li>
+        </ul>
+        <a class="next carousel_btn" onclick="plusSlides(1)">&#10095;</a>
     </div>
+    <script src="app.js"></script>
 </body>
+
 </html>
